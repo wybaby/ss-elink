@@ -27,5 +27,5 @@ done
 FILE="/etc/config/shadowsocks-libev"
 sed -i '/option server /d' ${FILE}
 sed -i '$a''\        option server '"'"${IP}"'" ${FILE}
-`/etc/init.d/shadowsocks-libev restart`
+`/etc/init.d/shadowsocks-libev reload`
 #echo ${array[${INDEX}]} "," ${MIN} "," ${IP}
